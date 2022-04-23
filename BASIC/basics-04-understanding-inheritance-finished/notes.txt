@@ -11,4 +11,5 @@
 10. Height of a tag element depends on its parent height. Use px instead of % .
 11. Box-sizing is border-box, not content-box. We need width/height to accomdate for padding,border. Margin is not part of this.
 12. display: inline-block. Child elements are behaving as inline. Their parent behaves as block kind (Eligibile for top/bottom rule).
-13. 
+13. On Inline elements, padding, margin, widht and height works differently. Check wiki.
+
