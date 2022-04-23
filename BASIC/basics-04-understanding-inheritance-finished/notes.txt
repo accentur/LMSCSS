@@ -1,0 +1,10 @@
+1. Inheritance has low specificity even < than browser defaults.
+2. Inheritance works on fonts and others.....but there are excceptions.
+3. Complete MDN CSS Reference (don't learn this by heart!): https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+4.Do you prefer reading? Find written CSS docs on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS
+5.Common CSS Properties Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
+6.CSS Combinators: https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors
+7.More details on CSS Specifity: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+
+8. Block level elements take 100 % width like <h1> tag.
+9.
