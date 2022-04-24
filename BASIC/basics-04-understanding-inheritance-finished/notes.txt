@@ -7,4 +7,9 @@
 7.More details on CSS Specifity: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 
 8. Block level elements take 100 % width like <h1> tag.
-9.
+9. Inline elements take the width its content needed. They do not have margin top/bottom.
+10. Height of a tag element depends on its parent height. Use px instead of % .
+11. Box-sizing is border-box, not content-box. We need width/height to accomdate for padding,border. Margin is not part of this.
+12. display: inline-block. Child elements are behaving as inline. Their parent behaves as block kind (Eligibile for top/bottom rule).
+13. On Inline elements, padding, margin, widht and height works differently. Check wiki.
+
