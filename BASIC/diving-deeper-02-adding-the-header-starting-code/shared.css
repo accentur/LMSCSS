@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+
+.main-footer{
+
+    background: black;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer__links{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    text-align: center;
+}
+
+.main-footer__link{
+margin: 0 16px;
+display: inline-block;
+
+}
+
+.main-footer__link a{
+text-decoration: none;
+color: white;
+    
+    }
+
+.main-footer__link a:hover,
+.main-footer__link a:active{
+color: lightgray;
+}
+
+.main-header{
+    width: 100%;
+    background: violet;
+    padding: 8px 16px;
+  
+  }
+  
+  .main-nav__item{
+  
+      display: inline-block;
+      text-decoration: none;
+      margin-left: 10px;
+  }
+  .main-nav{
+   display: inline-block;
+   text-align: right;
+   width:calc(100% - 67px);
+   vertical-align: middle;
+  }
+  .main-header > div {
+      display: inline-block;
+      vertical-align: middle;
+  }
+  
+  .main-nav__items{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  .main-header__brand{
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;    
+  }
+  
+  .main-nav a{
+      text-decoration: none;
+  }
+  
+  .main-nav__item a:hover,
+  .main-nav__item a:active{
+      color: white;
+      border-bottom: 5px solid white;
+  }
+  
+  .main-nav__item a{
+      font-weight: bold;
+      padding: 5px,0;
+  }
+  
+  /* .main-nav a::after{
+      content: " (Link)";
+  } */
+  
+  .main-nav__item--cta a{
+  
+    color: white;
+    background: red;
+    padding: 8 px 16px;
+    border-radius: 3px;
+  }
+  
+  .main-nav__item--cta a:hover,
+  .main-nav__item--cta a:active{
+  
+      color: red;
+      background: white;
+      border: none;
+  }
+
+  .button{
+    background: rgb(20, 216, 63);
+    color:white;
+    font: inherit;
+    border: 1.5 px solid #008000;
+   padding:8px;
+   border-radius: 8px;
+   font-weight: bold;
+   cursor: pointer;
+   }
+   .button:hover,
+   .button:active{
+    
+   background: white;
+   color: green;
+   }
+   
