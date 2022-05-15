@@ -12,4 +12,4 @@ Height of a tag element depends on its parent height. Use px instead of % .
 Box-sizing is border-box, not content-box. We need width/height to accomdate for padding,border. Margin is not part of this.
 display: inline-block. Child elements are behaving as inline. Their parent behaves as block kind (Eligibile for top/bottom rule).
 On Inline elements, padding, margin, widht and height works differently. Check wiki.
-
+z-index applied to elements that has some position value, not static. By default , its value is auto/0
