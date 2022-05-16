@@ -15,3 +15,4 @@ On Inline elements, padding, margin, widht and height works differently. Check w
 z-index applied to elements that has some position value, not static. By default , its value is auto/0
 If two position  elements has same z-index, they follow same document flow.
 For Fixed postion, positioning context is always viewport/html. For , absolute, it is nearest parents.
+So, In theory, navnar, we can postion them fixed and all. For elements ann their content, relative and absolute.
