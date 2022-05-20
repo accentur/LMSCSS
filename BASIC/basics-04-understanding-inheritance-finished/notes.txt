@@ -17,3 +17,4 @@ If two position  elements has same z-index, they follow same document flow.
 For Fixed postion, positioning context is always viewport/html. For , absolute, it is nearest parents.
 So, In theory, navnar, we can postion them fixed and all. For elements ann their content, relative and absolute.
 For Fixed/absolute, their position context(top/left/right...) is determined by their parents.For relative, position context is current position.
+When we apply overflow at body level, it goes to html level. apply at both..this way...any element with position :relative overflow(hidden) will be applied.
