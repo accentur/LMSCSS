@@ -19,3 +19,4 @@ So, In theory, navnar, we can postion them fixed and all. For elements ann their
 For Fixed/absolute, their position context(top/left/right...) is determined by their parents.For relative, position context is current position.
 When we apply overflow at body level, it goes to html level. apply at both..this way...any element with position :relative overflow(hidden) will be applied.
 For position relative, if element goes out of parent block, apply overflow:hidden at parent level to hide the element.
+Stacking Context : Parents level elments will compete using z-index. Child level z index will not interfere with parent level z-index.
