@@ -20,3 +20,4 @@ When we apply overflow at body level, it goes to html level. apply at both..this
 For position relative , if element goes out of parent block, apply overflow:hidden at parent level to hide the element.
 Stacking Context : Parents level elments will compete using z-index. Child level z index will not interfere with parent level z-index.
 Image size is adopted by its parents. Change parent/child height at same time. For % based height, child image follow parent height if parent has inline-block true.
+https://www.samanthaming.com/pictorials/css-inline-vs-inlineblock-vs-block/
