@@ -21,3 +21,11 @@ For position relative , if element goes out of parent block, apply overflow:hidd
 Stacking Context : Parents level elments will compete using z-index. Child level z index will not interfere with parent level z-index.
 Image size is adopted by its parents. Change parent/child height at same time. For % based height, child image follow parent height if parent has inline-block true.
 https://www.samanthaming.com/pictorials/css-inline-vs-inlineblock-vs-block/
+SVG: Scalar Vector Graphics. They are third party images. 
+Why use SVG at all?
+-----Small file sizes that compress well
+-----Scales to any size without losing clarity (except very tiny)
+-----Looks great on retina displays
+----Design control like interactivity and filters.
+---- Stroke..fill ...Stroke-width are some properties we can set.
+For image, background is short hand notation that provides some default values to many values. watch out carefully.
