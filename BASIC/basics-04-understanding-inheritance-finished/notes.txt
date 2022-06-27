@@ -31,3 +31,4 @@ Why use SVG at all?
 For image, background is short hand notation that provides some default values to many values. watch out carefully.
 Way % works:-  Ruel 1 :- Size of the child element depends on containing blocks. If the position fixed is applied to child element, the containing block is always viewport. Means, In relation to parent/viewport, % value of element (say widht) will be calculated.
 Rule 2:-  
+margin:auto only works for block level elements with explicitly assigned width though.
