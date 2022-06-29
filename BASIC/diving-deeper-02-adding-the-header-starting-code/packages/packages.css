@@ -48,7 +48,7 @@ padding-top: 20px;
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 32px;
+    padding: 2rem;
 }
 
 .page__title{
@@ -58,9 +58,9 @@ padding-top: 20px;
 
 .page__description{
 
-    padding: 16px;
+    padding: 1rem;
     border: 1px solid darkgreen;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: darkgreen;
     background: white;
 }
@@ -106,12 +106,12 @@ background: rgba(213,255,220,0.95);
     position: absolute;
     top: 0px;
     right: 0px;
-    margin: 45px;
-    font-size: 12px;
+    margin: 2.8rem;
+    font-size: 0.75rem;
     color: white;
     background: #ff5454;
     border-radius: 3px;
-    padding: 8px;
+    padding: 0.5rem;
 
 
 }
