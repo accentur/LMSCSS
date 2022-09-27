@@ -1,0 +1,6 @@
+1. All flex items are aligned strecch...equal height. 'align-items is the one.'
+Align items always refers to cross axis....
+flex childs height depends on flex-direction and align items
+justify-content is to align items along main axis.
+align-content works along cross axis.
+

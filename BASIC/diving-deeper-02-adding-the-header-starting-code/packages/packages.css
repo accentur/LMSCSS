@@ -3,9 +3,10 @@
     /* background-color: lightgreen; */
     border: 3px solid grey;
     border-left: none;
-    margin-top: 20px;
-    width: 800px;
+    /* margin-top: 50px; */
+    width: 400px;
     position: relative;
+    font-family: "Roboto",sans-serif;
 }
 
 .packages-plans:hover,
@@ -54,6 +55,7 @@ padding-top: 20px;
 .page__title{
   color: rgb(161, 156, 156);
 
+  
 }
 
 .page__description{
@@ -66,6 +68,9 @@ padding-top: 20px;
 }
 #plus{
 background: rgba(213,255,220,0.95);
+position: relative;
+top: 40px;
+margin-bottom: 50px;
 
 }
 .clearfix{
@@ -86,6 +91,7 @@ background: rgba(213,255,220,0.95);
 }
 #premium{
     background: rgba(14,79,31,0.95);
+    margin-top: 8px;
 
 }
 
@@ -114,4 +120,39 @@ background: rgba(213,255,220,0.95);
     padding: 0.5rem;
 
 
+}
+
+@media(min-width:40rem){
+
+    .packages-plans{
+
+        width: 800px;
+
+    }
+
+ 
+
+    main{
+
+      margin: 3rem 3rem;
+      max-width: 90%;
+    }
+
+    #plus{
+        border-left: 3px solid #0e4f1f;
+        
+        }
+
+    #plus:hover{
+        border-left: 3px solid #0e4f1f;
+        border-left-color: #ff5454;
+        
+        }
+    #free{
+        border-right: 3px solid #0e4f1f;
+    }
+
+    #free:hover{
+        border-right-color: red;
+    }
 }

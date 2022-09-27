@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -35,6 +37,7 @@ body {
     margin-top: 48px;
 }
 
+
 .main-footer__links{
     list-style: none;
     margin: 0;
@@ -43,8 +46,19 @@ body {
 }
 
 .main-footer__link{
-margin: 0 16px;
-display: inline-block;
+margin: 1rem 0px;
+display: block;
+
+}
+
+@media(min-width:40rem){
+
+  .main-footer__link{
+  
+    display: inline-block;
+    margin: 0px 1rem;
+    
+    }
 
 }
 
@@ -65,6 +79,10 @@ color: lightgray;
     padding: 8px 16px;
     position: fixed;
     z-index: 1;
+    top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   
   }
   
@@ -75,20 +93,34 @@ color: lightgray;
       margin-left: 10px;
   }
   .main-nav{
-   display: inline-block;
-   text-align: right;
-   width:calc(100% - 122px);
-   vertical-align: middle;
+   display: none;
+   /* text-align: right;
+   width:calc(100% - 115px);
+   vertical-align: middle; */
   }
-  .main-header > div {
+
+  @media(min-width:40rem){
+    .main-nav{
+  
+      /* width:calc(100% - 122px);
+      display: inline-block;
+      vertical-align: middle;
+      text-align: right; */
+      display: flex;
+     
+     }
+   
+  }
+  /* .main-header > div {
       display: inline-block;
       vertical-align: middle;
   }
-  
+   */
   .main-nav__items{
       padding: 0;
       margin: 0;
       list-style: none;
+      display: flex;
   }
   
   .main-header__brand{
@@ -96,13 +128,14 @@ color: lightgray;
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
-  height: 30px;   
-  display: inline-block; 
-  vertical-align: middle;
+ 
+  /* display: inline-block; 
+  vertical-align: middle; */
   }
   .main-header__brand img{
 
-    height: inherit;
+    height: 30px;   
+    vertical-align: middle;
   }
   
   .main-nav a{
@@ -175,9 +208,13 @@ color: lightgray;
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: 0 auto;
     padding: 0;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   
   .mobile-nav__item {
@@ -197,6 +234,17 @@ color: lightgray;
     padding-bottom: 0;
     vertical-align: middle;
   }
+
+  @media(min-width:40rem){
+
+    .toggle-button{
+
+     display: none;
+      
+    }
+ 
+  
+}
   
   .toggle-button:focus {
     outline: none;
@@ -210,3 +258,7 @@ color: lightgray;
     margin: 0.6rem 0;
   }
   
+  .open{
+
+    display: block!important;
+  }
