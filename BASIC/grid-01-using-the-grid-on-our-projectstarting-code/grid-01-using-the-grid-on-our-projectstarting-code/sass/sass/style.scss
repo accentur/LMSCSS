@@ -1,0 +1,87 @@
+* {box-sizing: border-box;}html, body {margin: 0;width: 100%;height: 100%;}body{display: flex;justify-content: center;align-items: center;}
+
+@mixin cuboid ($x, $y, $z){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  overflow: visible;
+  background-color: transparent;
+  perspective-origin: center center;
+  transform-style: preserve-3d;
+  
+  & >*:is(.front, .back, .left, .right, .top, .bottom) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: inherit;
+    color: #fff;
+    opacity: 0.7;
+  }
+  .front, .back {
+    width: $x;
+    height: $y;
+  }
+  .left, .right {
+    width: $z;
+    height: $y;
+  }
+  .top, .bottom {
+    width: $x;
+    height: $z;
+  }
+  .top {
+    transform: rotateX(90deg) translateZ($y/2);
+  }
+  .bottom {
+    transform: rotateX(90deg) translateZ(-($y/2));
+  }
+  .left {
+    transform: rotateY(90deg) translateZ(-($x/2))
+  }
+  .right {
+    transform: rotateY(90deg) translateZ($x/2)
+  }
+  .front {
+    transform: translateZ($z/2);
+  }
+  .back {
+    transform: translateZ(-($z/2));
+  }
+}
+
+.scene {
+  perspective: 500px;
+  perspective-origin: 70% 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  overflow: visible;
+  position: relative;
+  
+  .centerpoint {
+    @include cuboid(100px, 50px, 200px);
+    & > *:is(.front, .back, .left, .right, .top, .bottom) {
+      border: 1px solid black;
+    }
+    animation: rotate 5s linear infinite;
+  }
+  
+  .centerpoint2 {
+    @include cuboid(20px, 10px, 40px);
+    & > * {
+      border: 1px solid black;
+    }
+  }
+  
+}
+
+
+
+@keyframes rotate {
+  to {transform: rotate3d(1, 1, 1, 1turn)}
+}

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.scene {
+  perspective: 500px;
+  perspective-origin: 70% 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  overflow: visible;
+  position: relative; }
+  .scene .centerpoint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    overflow: visible;
+    background-color: transparent;
+    perspective-origin: center center;
+    transform-style: preserve-3d;
+    animation: rotate 5s linear infinite; }
+    .scene .centerpoint > *:is(.front, .back, .left, .right, .top, .bottom) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      backface-visibility: inherit;
+      color: #fff;
+      opacity: 0.7; }
+    .scene .centerpoint .front, .scene .centerpoint .back {
+      width: 100px;
+      height: 50px; }
+    .scene .centerpoint .left, .scene .centerpoint .right {
+      width: 200px;
+      height: 50px; }
+    .scene .centerpoint .top, .scene .centerpoint .bottom {
+      width: 100px;
+      height: 200px; }
+    .scene .centerpoint .top {
+      transform: rotateX(90deg) translateZ(25px); }
+    .scene .centerpoint .bottom {
+      transform: rotateX(90deg) translateZ(-25px); }
+    .scene .centerpoint .left {
+      transform: rotateY(90deg) translateZ(-50px); }
+    .scene .centerpoint .right {
+      transform: rotateY(90deg) translateZ(50px); }
+    .scene .centerpoint .front {
+      transform: translateZ(100px); }
+    .scene .centerpoint .back {
+      transform: translateZ(-100px); }
+    .scene .centerpoint > *:is(.front, .back, .left, .right, .top, .bottom) {
+      border: 1px solid black; }
+  .scene .centerpoint2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    overflow: visible;
+    background-color: transparent;
+    perspective-origin: center center;
+    transform-style: preserve-3d; }
+    .scene .centerpoint2 > *:is(.front, .back, .left, .right, .top, .bottom) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      backface-visibility: inherit;
+      color: #fff;
+      opacity: 0.7; }
+    .scene .centerpoint2 .front, .scene .centerpoint2 .back {
+      width: 20px;
+      height: 10px; }
+    .scene .centerpoint2 .left, .scene .centerpoint2 .right {
+      width: 40px;
+      height: 10px; }
+    .scene .centerpoint2 .top, .scene .centerpoint2 .bottom {
+      width: 20px;
+      height: 40px; }
+    .scene .centerpoint2 .top {
+      transform: rotateX(90deg) translateZ(5px); }
+    .scene .centerpoint2 .bottom {
+      transform: rotateX(90deg) translateZ(-5px); }
+    .scene .centerpoint2 .left {
+      transform: rotateY(90deg) translateZ(-10px); }
+    .scene .centerpoint2 .right {
+      transform: rotateY(90deg) translateZ(10px); }
+    .scene .centerpoint2 .front {
+      transform: translateZ(20px); }
+    .scene .centerpoint2 .back {
+      transform: translateZ(-20px); }
+    .scene .centerpoint2 > * {
+      border: 1px solid black; }
+
+@keyframes rotate {
+  to {
+    transform: rotate3d(1, 1, 1, 1turn); } }
+
+/*# sourceMappingURL=style.css.map */
